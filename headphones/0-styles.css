@@ -28,3 +28,61 @@ body {
     margin: 0 auto;
     padding: 0 20px;
 }
+/* Header */
+header {
+    background: var(--main-bg-color);
+    padding: 20px 0;
+}
+
+header .logo img {
+    width: 120px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+header nav ul li a {
+    color: var(--text-color);
+    text-decoration: none;
+    padding: 10px;
+}
+
+/* Hero section */
+.hero {
+    background: url('assets/images/hero-bg.jpg') no-repeat center center/cover;
+    color: var(--text-color);
+    text-align: center;
+    padding: 100px 0;
+}
+
+.hero h1 {
+    font-size: 2.5em;
+    margin: 0 0 20px;
+}
+
+.hero p {
+    margin: 0 0 20px;
+}
+
+.hero .btn {
+    background: var(--accent-color);
+    color: var(--text-color);
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.hero .btn:hover, .hero .btn:active {
+    opacity: 0.9;
+}
+
+/* Media Queries */
+@media (max-width: 480px) {
+    header nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+}
