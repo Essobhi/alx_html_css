@@ -1,1 +1,51 @@
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh; /* Ensure full viewport height */
+    margin: 0; /* Remove default margin */
+}
 
+main {
+    display: flex;
+    flex: 1; /* Automatically adjust height */
+    flex-direction: row;
+    overflow: hidden; /* Prevent overflow */
+}
+article {
+    flex: 2; /* Takes 2/3 of the width */
+    overflow-y: auto; /* Enable vertical scrolling */
+    padding: 20px; /* Add padding for content spacing */
+}
+
+aside {
+    flex: 1; /* Takes 1/3 of the width */
+    overflow-y: auto; /* Enable vertical scrolling */
+    padding: 20px; /* Add padding for content spacing */
+}
+/* Apply flexbox layout to body and main */
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+}
+
+main {
+    display: flex;
+    flex: 1; /* Automatically adjust height */
+    flex-direction: row;
+    overflow: hidden; /* Prevent overflow */
+}
+
+/* Define widths and scrolling behavior for article and aside */
+article {
+    flex: 2; /* Takes 2/3 of the width */
+    overflow-y: auto; /* Enable vertical scrolling */
+    padding: 20px; /* Add padding for content spacing */
+}
+
+aside {
+    flex: 1; /* Takes 1/3 of the width */
+    overflow-y: auto; /* Enable vertical scrolling */
+    padding: 20px; /* Add padding for content spacing */
+}
