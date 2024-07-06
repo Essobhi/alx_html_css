@@ -1,1 +1,30 @@
+/* 0-styles.css */
 
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Variables */
+:root {
+    --main-bg-color: #333;
+    --text-color: #fff;
+    --accent-color: #ff6565;
+    --max-width: 1000px;
+}
+
+/* Base styles */
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    background: var(--main-bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+.container {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 0 20px;
+}
